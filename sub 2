@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ll long long 
+#define ar array
+ 
+
+const int mxN=2e5;
+int n;
+ll x,a[mxN];
+
+int main()
+{

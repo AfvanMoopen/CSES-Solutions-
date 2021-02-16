@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+
+int main()
+{
+int t;
+cin>> t;
+while(t--)
+{
+ll y,x;
+cin>>y>>x;
+ll z = max(y,x);
+ll z2 = z*z,ans;
+if(z%2)
+{
+if(y == z)
+{
+
+ans = z2 * x;
+
+}else{
+ans = z2*2*z-y+1;
+
+}
+}
+cout<< ans << "/n";
+
+} 
+}

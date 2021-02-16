@@ -1,0 +1,36 @@
+
+Money Sums
+------------------
+
+#include <bits/stdc++.h>
+using namespace std;
+
+#define long long ll;
+#define array ar;
+
+
+const int mxN = 100;
+const int mxX  =1e9;
+int n, x[mxN], dp[mxX +1];
+
+int main()
+{
+cin >> n;
+for(int i =0 ; i < n; i++)
+cin>>x[i];
+dp[0] = 1;
+for(int j=1 ; j < = mxX; ++j)
+for(int i = mxX; i; --i)
+if(i >= x[j])
+dp[i] = dp[i-x[j]];
+
+vector<int> ans;
+for(int i=1; i <= 1e5; ++i)
+if(dp[i])
+ans.push_back(i);
+cout << ans.size()l<< "\n";
+for(int a : ans)
+cout << a <<  " ";
+
+
+}
